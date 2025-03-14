@@ -1,0 +1,102 @@
+.content-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form{
+    margin-top: 50px;
+    width: 700px;
+    max-width: 100%;
+    background-image: url("../img/contact.jpg");
+    background-size: 30%;
+    background-position: 90% 40%;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+form > div{
+    margin-bottom: 20px;
+}
+
+input{
+    width: 40%;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    caret-color: var(--first-color);
+    background-color: var(--secound-color);
+    color: var(--main-color);
+    display: block;
+    margin-bottom: 30px;
+}
+
+textarea{
+    background-color: var(--secound-color);
+}
+
+label{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button[type="submit"]{
+    background-color: var(--main-color);
+    color: var(--secound-color);
+    padding: 7px 14px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.info{
+  align-self: center;
+}
+
+.info i{
+    font-size: 34px;
+    margin-right: 20px;
+    transition: all .25s ease-in-out;
+}
+.info i:hover{
+    color: var(--main-color);
+}
+
+@media(max-width:768px){
+    form{
+        align-self: center;
+        width: 800px;
+        max-width: 100%;
+        background-image: none;
+        background-size: 30%;
+        background-position: 90% 40%;
+        background-repeat: no-repeat;
+        padding: 40px;
+    }
+
+    input{
+        width: 300px;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+        outline: none;
+        caret-color: var(--first-color);
+        background-color: var(--secound-color);
+        color: var(--main-color);
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+}

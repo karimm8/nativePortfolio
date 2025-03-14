@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css -->
+     <link rel="stylesheet" href="./css/normalize.css">
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- home -->
+     <section class="home">
+        <div class="alpha"></div>
+        <div class="carousel">
+            <img class="img" src="./img/carousel/1.jpg" alt="img"/>
+            <img class="img" src="./img/carousel/2.jpg" alt="img"/>
+            <img class="img" src="./img/carousel/3.jpg" alt="img"/>
+        </div>
+        <nav class="nav">
+            <div class="nav-center">
+                <a href="#" class="title-size">k.corder</a>
+                <button class="toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <a href="#" class="active header">home</a>
+                <a href="#about" class="header">aboute</a>
+                <a href="#projects" class="header">projects</a>
+                <a href="#contact" class="header">contact</a>
+            </ul>
+        </nav>
+        <div class="banner flex-center">
+            <div class="content back-border">
+                <div class="img-banner">
+                    <img src="./img/profil.jpeg"/>
+                </div>
+                <header class="header">
+                    <h1 class="title-size">k.corder</h1>
+                </header>
+                <div class="sub-title">
+                    <p class="text">
+                        Welcome dear visitors to my page. I hope you like it. I am a frontend developer.
+                    </p>
+                </div>
+                <a href="" class="download header">download CV</a>
+            </div>
+        </div>
+     </section>
+     <!--aboute-->
+     <section class="about flex-center" id="about">
+        <div class="content-about">
+            <header class="flex-center">
+                <h1 class="title-size header">aboute me</h1>
+            </header>
+            <div class="info-about back-border">
+                <div class="desc">
+                    <p class="text text-center">
+                        Hello, I am Abdelkarim Maarouf, holder of a technician diploma specializing in computer development, I am passionate about creating interactive and innovative websites. I have acquired a solid knowledge of programming languages ​​such as HTML, CSS, JavaScript, ReactJS, WordPress
+                    </p>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!--project-->
+     <section class="projects" id="projects">
+        <header class="flex-center">
+            <h1 class="title-size header">our projects</h1>
+        </header>
+        <div class="option flex-center">
+            <button class="header btn" data-id="all">all</button>
+            <button class="header btn" data-id="html/css">html/css</button>
+            <button class="header btn" data-id="js">js</button>
+            <button class="header btn" data-id="reactjs">reactjs</button>
+        </div>
+        <article class="list">
+            
+        </article>
+     </section>
+     <!--contact-->
+     <section class="contact" id="contact">
+        <header class="flex-center">
+            <h1 class="title-size header">contact us</h1>
+        </header>
+        <div class="content-contact">
+            <div class="info">
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/karimm8">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                </a> 
+            </div>
+            <form class="form back-border" action="https://formspree.io/f/xdkekobz" method="post">
+                <div class="content-form">
+                   
+                    <div class="email">
+                        <label class="form-text" for="email">email</label>
+                        <input class="form-text" name="email" type="email" autocomplete="off" required id="email" placeholder="your email...">
+                    </div>
+                    <div class="msg">
+                        <label class="form-text" for="msg">message</label>
+                        <textarea class="form-text" name="message" id="msg" id="" cols="40" rows="5" required  placeholder="message..." autocomplete="off"> </textarea>
+                    </div>
+                </div>
+                <button class="form-text header" type="submit">send message</button>
+            </form>
+        </div>
+       
+     </section>
+     <!--footer-->
+     <footer class="flex-center">
+        <p>copyright &copy; k.corder <span id="date"></span>all right reserved.</p>
+     </footer>
+   </div>
+   <script type="module" src="./js/script.js"></script>
+</body>
+</html>

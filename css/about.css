@@ -1,0 +1,12 @@
+.about .content-about{
+    width: 800px;
+    max-width: 100%;
+}
+
+.content-about header h1{
+    transition: all .25 ease-in-out;
+}
+
+.content-about header h1:hover{
+    color: white;
+}

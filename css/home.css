@@ -1,0 +1,151 @@
+/* home */
+.home{
+    position: relative;
+    height: 100vh;
+    z-index: 50;
+}
+
+.home .alpha{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 0 0 / .7);
+    z-index: -1;
+}
+
+.home .carousel{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    z-index: -2;
+}
+
+.home .carousel img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(0);
+    transition: all 3s ease-in-out;
+}
+
+/* nav */
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    padding: 20px 15px ;
+    transition: all .25s ease-in-out;
+    z-index: 99;
+}
+
+.active{
+    background-color: var(--main-color);
+}
+
+.links{
+    margin-right: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.links a{
+    font-weight: var(--title-weight);
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+.links a:hover{
+    color: white;
+}
+
+.show-navbar{
+    background-color:var(--main-color);
+}
+
+.show-navbar a{
+    color: var(--first-color);
+}
+
+.toggle{
+    display: none;
+}
+
+.show-navbar .toggle{
+    color: var(--first-color);
+}
+
+/* banner */
+
+.banner{
+    height: 100%;
+}
+
+.content{ 
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content .img-banner{
+    width: 150px;
+    aspect-ratio: 2/2;
+    border-radius: 50%;
+    background-color: var(--secound-color);
+    padding: 5px 10px 15px 2px;
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+.content .img-banner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media(max-width:768px){
+    nav .nav-center{
+       flex-basis: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 20px;
+        background-color: transparent;
+        font-size: var(--title-size-laptop);
+        color: white;
+    }
+    .links{
+        margin-top: 20px;
+        height: 0;
+        overflow: hidden;
+        transition: all .25s ease-in-out;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .show-links{
+        height: auto;
+    }
+
+    .logo{
+        font-size: var(--title-size-mobile);
+    }
+}
+
