@@ -14,7 +14,7 @@
 <body>
    <div class="container">
     <!-- home -->
-     <section class="home">
+     <section class="home" id="home">
         <div class="alpha"></div>
         <div class="carousel">
             <img class="img" src="./img/carousel/1.jpg" alt="img"/>
@@ -48,7 +48,7 @@
                         Welcome dear visitors to my page. I hope you like it. I am a frontend developer.
                     </p>
                 </div>
-                <a href="" class="download header">download CV</a>
+                <a href="Actual.pdf" download class="download header">download CV</a>
             </div>
         </div>
      </section>
@@ -56,7 +56,7 @@
      <section class="about flex-center" id="about">
         <div class="content-about">
             <header class="flex-center">
-                <h1 class="title-size header">aboute me</h1>
+                <h1 class="title-size header m-b">aboute me</h1>
             </header>
             <div class="info-about back-border">
                 <div class="desc">
@@ -70,7 +70,7 @@
      <!--project-->
      <section class="projects" id="projects">
         <header class="flex-center">
-            <h1 class="title-size header">our projects</h1>
+            <h1 class="title-size m-b header">our projects</h1>
         </header>
         <div class="option flex-center">
             <button class="header btn" data-id="all">all</button>
@@ -85,20 +85,20 @@
      <!--contact-->
      <section class="contact" id="contact">
         <header class="flex-center">
-            <h1 class="title-size header">contact us</h1>
+            <h1 class="title-size m-b header">contact us</h1>
         </header>
         <div class="content-contact">
-            <div class="info">
-                <a href="">
+            <div class="info-contact">
+                <a href="https://linkedin.com/in/abdelkarim-maarouf-99117b278">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/karimm8">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=100077039018500">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="">
+                <a href="https://mail.google.com/mail/u/0/#inbox">
                     <i class="fa-solid fa-envelope"></i>
                 </a> 
             </div>
@@ -120,9 +120,12 @@
        
      </section>
      <!--footer-->
-     <footer class="flex-center">
-        <p>copyright &copy; k.corder <span id="date"></span>all right reserved.</p>
+     <footer class="flex-center text-center">
+        <p>copyright &copy; k.corder <span id="date"></span> all right reserved.</p>
      </footer>
+     <a href="#home" class="top-link">
+        <i class="fa-solid fa-arrow-up"></i>
+     </a>
    </div>
    <script type="module" src="./js/script.js"></script>
 </body>

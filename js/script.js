@@ -14,3 +14,9 @@ import {initial,filterProjects} from './projects.js'
 
 initial()
 filterProjects()
+
+// footer
+
+import {date} from './footer.js'
+
+date()

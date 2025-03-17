@@ -1,0 +1,17 @@
+footer{
+    background-color: #222;
+    color:white;
+    padding: 20px 0;
+}
+
+footer p{
+    width: 600px;
+    max-width: 90%;
+}
+
+@media(max-width:768px){
+    footer p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

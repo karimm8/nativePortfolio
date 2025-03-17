@@ -17,6 +17,7 @@ article{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+    place-content: center;
     gap: 20px;
     padding: 15px;
 }
